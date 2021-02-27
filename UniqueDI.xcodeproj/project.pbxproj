@@ -70,10 +70,8 @@
 		4B3CD86F25E61FBA00CF3D96 /* UniqueDI */ = {
 			isa = PBXGroup;
 			children = (
+				4BBCA4BE25EA0341001B19A4 /* Extension */,
 				4B5D511125E7BBED001A086E /* Foundation */,
-				4B427B2B25E64F1C00EDAE44 /* UDIManager */,
-				4B3CD88325E621E300CF3D96 /* UDIContext */,
-				4B3CD87C25E6208700CF3D96 /* NSObject+UDI */,
 				4B3CD87025E61FBA00CF3D96 /* UniqueDI.h */,
 			);
 			path = UniqueDI;
@@ -109,10 +107,28 @@
 		4B5D511125E7BBED001A086E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				4BBCA4BF25EA0356001B19A4 /* UDIQueue */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4BBCA4BE25EA0341001B19A4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4B427B2B25E64F1C00EDAE44 /* UDIManager */,
+				4B3CD88325E621E300CF3D96 /* UDIContext */,
+				4B3CD87C25E6208700CF3D96 /* NSObject+UDI */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4BBCA4BF25EA0356001B19A4 /* UDIQueue */ = {
+			isa = PBXGroup;
+			children = (
 				4B5D511225E7BC2F001A086E /* UDIQueue.h */,
 				4B5D511325E7BC3C001A086E /* UDIQueue.m */,
 			);
-			path = Foundation;
+			path = UDIQueue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

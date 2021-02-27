@@ -23,3 +23,12 @@
 #define UDIBIND(aProtocol, aProperty) \
 Protocol *protocol = @protocol(aProtocol);\
 [UDIManager bind:protocol withProperty:aProperty inContext:self.attachingContext];
+
+#define UDILINKINLINE(aProtocol) \
+^id<aProtocol> { \
+    Protocol *protocol = @protocol(aProtocol);        \
+    UDIContext *context = self.attachingContext;       \
+    id<aProtocol> aProperty = (id<aProtocol>)[UDIManager link: protocol inContext:context];     \
+    return aProperty; \
+}
+

@@ -6,6 +6,7 @@
 //
 
 #import "UDIManager.h"
+#import "UDIQueue.h"
 
 @implementation UDIManager
 
