@@ -10,9 +10,9 @@
 @interface UDIContext()
 
 @property (nonatomic,readwrite,copy) NSString* name;
-@property (nonatomic,readwrite,copy) NSArray<UDIContext *>* subContexts;
-@property (nonatomic,readwrite,strong) UDIContext* superContext;
-@property (nonatomic,copy) NSMapTable* kvStore;
+@property (nonatomic,readwrite,strong) NSArray<UDIContext *>* subContexts;
+@property (nonatomic,readwrite,weak) UDIContext* superContext;
+@property (nonatomic,strong) NSMapTable* kvStore;
 
 @end
 

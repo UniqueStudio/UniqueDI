@@ -32,3 +32,6 @@ Protocol *protocol = @protocol(aProtocol);\
     return aProperty; \
 }
 
+#define UDIAppContext \
+[UDIManager AppContext]
+

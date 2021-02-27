@@ -10,7 +10,7 @@
 @interface UDIContext : NSObject 
 
 @property (nonatomic,readonly,copy) NSString* name;
-@property (nonatomic,readonly,copy) NSArray<UDIContext *>* subContexts;
+@property (nonatomic,readonly) NSArray<UDIContext *>* subContexts;
 @property (nonatomic,readonly) UDIContext* superContext;
 
 - (instancetype)initWithName:(NSString*)name superContext:(UDIContext*)context;
