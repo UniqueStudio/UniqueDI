@@ -11,7 +11,7 @@
 
 @property (nonatomic,readonly,copy) NSString* name;
 @property (nonatomic,readonly) NSArray<UDIContext *>* subContexts;
-@property (nonatomic,readonly) UDIContext* superContext;
+@property (nonatomic,readonly,weak) UDIContext* superContext;
 
 - (instancetype)initWithName:(NSString*)name superContext:(UDIContext*)context;
 

@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "UniqueDI"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "An easy Dependency Injection developered by UniqueStudio."
   spec.description  = <<-DESC
                       a naive Dependency Injection (Dependence Inversion ,to be more accurate) with Context Isolation.
@@ -23,10 +23,10 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "10.0"
 
   spec.source       = { :git => "https://github.com/UniqueStudio/UniqueDI.git", :tag => "#{spec.version}" }
-  spec.source_files  = "UniqueDI/*"
+  spec.source_files  = "UniqueDI/**/*.{h,m}"
   spec.requires_arc = true
-  s.frameworks="Foundation"
-  spec.public_header_files = "UniqueDI/UniqueDI.h"
+  spec.frameworks="Foundation"
+  spec.public_header_files = "UniqueDI/**/*.h"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
